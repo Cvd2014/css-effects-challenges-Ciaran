@@ -4,12 +4,14 @@
 	<title>Page for the effects challenges</title>
 	<style type="text/css">
 	div{
+
 		height: 100px;
-		width: 100%;
+		width: 90%;
 		border: 2px red solid !important;
 		border-top-left-radius:15px;
 		border-top-right-radius: 15px;
 		text-align: center;
+		margin: auto;
 			}
 	#linear{
 		background:linear-gradient(left,#ff2500,#fffb00,#0432fe);
@@ -36,14 +38,56 @@
 		-ms-text-shadow:5px 5px 10px white;
 		-o-text-shadow:5px 5px 10px white;
 	}
+
+	#translated{
+		transform:translate(-10%);
+		-webkit-transform:translate(-10%);
+		-moz-transform:translate(-10%);
+		-ms-transform:translate(-10%);
+		-o-transform:translate(-10%);
+	}
+
+	#rotated{
+		position: relative;
+
+		/*transform-origin:(25%, 40%);
+		-webkit-transform-origin:(25%, 40%);
+		-moz-transform-origin:(0%,40%);
+		-ms-transform-origin:(0%, 40%);
+		-o-transform-origin:(0%, 40%);*/	
+
+		transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+	}
+	#scaled{
+		transform:scale(2);
+		-webkit-transform:scale(2);
+		-moz-transform:scale(2);
+		-ms-transform:scale(2);
+		-o-transform:scale(2);
+	}
+
+	#skewed{
+		transform:skew(30deg, 10deg);
+		-webkit-transform:skew(30deg, 10deg);
+		-ms-transform:skew(30deg, 10deg);
+		-moz-transform:skew(30deg, 10deg);
+		-o-transform:skew(30deg, 10deg);
+	}
+
 	</style>
 </head>
 <body>
 	<div id='linear'><h1>A Box with a Linear Gradient!</h1></div>
 	<div id='radial' class='shaded'><h1 id='shadow'>A box with a Radial Gradient!</h1></div>
-	<div><h1>3</h1></div>
-	<div><H1>4</H1></div>
-	<div><h1>5</h1></div>
+	<div><h1>Box</h1></div>
+	<div id="translated"><H1>I am translated</H1></div>
+	<div id="rotated"><h1>I am rotated</h1></div>
+	<div id ="scaled"><h1>I am Scaled</h1></div>
+	<div id="skewed"><h1>I am skewed</h1></div>
 
 </body>
 </html>
