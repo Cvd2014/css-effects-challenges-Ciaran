@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Page for the effects challenges</title>
@@ -7,14 +7,27 @@
 		height: 100px;
 		width: 100%;
 		border: 2px red solid !important;
+		border-top-left-radius:15px;
+		border-top-right-radius: 15px;
+		text-align: center;
+			}
+	#linear{
+		background:linear-gradient(left,#ff2500,#fffb00,#0432fe);
+		background:-webkit-linear-gradient(left,#ff2500,#fffb00,#0432fe);
+		background:-moz-linear-gradient(left,#ff2500,#fffb00,#0432fe);
+		background:-ms-linear-gradient(left,#ff2500,#fffb00,#0432fe);
+		background:-o-linear-gradient(left,#ff2500,#fffb00,#0432fe);
+	}
+	#radial{
+		
 	}
 
 
 	</style>
 </head>
 <body>
-	<div><h1>1</h1></div>
-	<div><h1>2</h1></div>
+	<div id='linear'><h1>A Box with a Linear Gradient!</h1></div>
+	<div id='gradient'><h1>A box with a Radial Gradient!</h1></div>
 	<div><h1>3</h1></div>
 	<div><H1>4</H1></div>
 	<div><h1>5</h1></div>
