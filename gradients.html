@@ -19,15 +19,28 @@
 		background:-o-linear-gradient(left,#ff2500,#fffb00,#0432fe);
 	}
 	#radial{
-		
+		background:radial-gradient(50% 50%,ellipse,#bbad8f,#e57b10);
+		background:-webkit-radial-gradient(50% 50%,ellipse closest-side,#bbad8f 20%,#bb926b 40%,#e57b10);
+		background:-moz-radial-gradient(50% 50%,ellipse,#bbad8f,#e57b10);
+		background:-ms-radial-gradient(50% 50%,ellipse,#bbad8f,#e57b10);
+		/*background:-o-linear-gradient(left,#ff2500,#fffb00,#0432fe);*/
+	}
+	.shaded{
+		box-shadow: 10px 10px 20px #8e8d89;
 	}
 
-
+	#shadow{
+		text-shadow:5px 5px 10px white;
+		-webkit-text-shadow:5px 5px 10px white;
+		-moz-text-shadow:5px 5px 10px white;
+		-ms-text-shadow:5px 5px 10px white;
+		-o-text-shadow:5px 5px 10px white;
+	}
 	</style>
 </head>
 <body>
 	<div id='linear'><h1>A Box with a Linear Gradient!</h1></div>
-	<div id='gradient'><h1>A box with a Radial Gradient!</h1></div>
+	<div id='radial' class='shaded'><h1 id='shadow'>A box with a Radial Gradient!</h1></div>
 	<div><h1>3</h1></div>
 	<div><H1>4</H1></div>
 	<div><h1>5</h1></div>
